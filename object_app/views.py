@@ -20,7 +20,7 @@ def AddBlog(request):
     return redirect("/")
 
 
-def BlogApdateView(request, pk):
+def BlogDetailsView(request, pk):
     blog1 = blog.objects.get(pk=pk)
 
     context = {"blog1": blog1}

@@ -31,18 +31,9 @@
     
     <div class="border p-5 m-5">
       {% for blog in blogs %}
-      <div><a href="{% url 'BlogApdateView' blog.pk %}">{{blog.pk}}.{{blog.title}}</a></div>
+      <div><a href="{% url 'blog-details' blog.pk %}">{{blog.pk}}.{{blog.title}}</a></div>
       {% endfor %}
     </div>
-    
-    
-
-    
-
-
-
-    
-
     
 
     <!-- Optional JavaScript; choose one of the two! -->
