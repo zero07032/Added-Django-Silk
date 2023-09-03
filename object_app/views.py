@@ -5,9 +5,6 @@ from django.http import HttpResponseRedirect
 
 # Create your views here.
 def home(request):
-    pb = blog.objects.get(pk=6)
-    pb.title = "oke"
-
     context = {"blogs": blog.objects.all()}
     return render(request, "home.html", context)
 
